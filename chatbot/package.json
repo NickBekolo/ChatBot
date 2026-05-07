@@ -1,0 +1,23 @@
+{
+  "name": "chatbot-recrutement",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "create-index": "node create-index.js",
+    "embed": "node embed-documents.js",
+    "chat": "node rag-pipeline.js",
+    "server": "node server.js",
+    "dev": "concurrently \"npm run server\" \"cd ../chaton-ui && npm run dev\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "@pinecone-database/pinecone": "^7.0.1",
+    "node-fetch": "^3.3.2"
+  }
+}
