@@ -9,7 +9,7 @@ Un chatbot intelligent combinant une interface React moderne avec une pipeline A
 
 ---
 
-## 🎯 Vue d'ensemble
+##  Vue d'ensemble
 
 **Chaton** est un chatbot complet qui répond aux questions en recherchant les documents pertinents dans une base vectorielle, puis en générant des réponses intelligentes avec citations des sources.
 
@@ -35,13 +35,13 @@ Un chatbot intelligent combinant une interface React moderne avec une pipeline A
 
 ---
 
-## 🚀 Démarrage rapide
+##  Démarrage rapide
 
 ### Prérequis
 - Node.js v18+
 - Clés API : [Mistral](https://mistral.ai) et [Pinecone](https://www.pinecone.io)
 
-### 1️⃣ Installation
+### 1️ Installation
 
 ```bash
 # Cloner le repo
@@ -53,7 +53,7 @@ cd chaton-ui && npm install
 cd ../chatbot && npm install
 ```
 
-### 2️⃣ Configuration
+### 2️ Configuration
 
 Créer `chatbot/.env`:
 ```env
@@ -68,7 +68,7 @@ Créer `chaton-ui/.env.local`:
 VITE_API_URL=http://localhost:3000
 ```
 
-### 3️⃣ Initialiser la base de données
+### 3️ Initialiser la base de données
 
 ```bash
 cd chatbot
@@ -80,7 +80,7 @@ node create-index.js
 node embed-documents.js
 ```
 
-### 4️⃣ Démarrage
+### 4️ Démarrage
 
 **Terminal 1 - Backend:**
 ```bash
@@ -102,14 +102,14 @@ Ouvrir: **http://localhost:5173**
 
 ```
 ChatBot/
-├── 📜 README.md                    # Ce fichier
-├── 📄 COMMANDS.md                  # Toutes les commandes utiles
-├── 🚀 START.sh                     # Script de démarrage automatique
+├──  README.md                    # Ce fichier
+├──  COMMANDS.md                  # Toutes les commandes utiles
+├──  START.sh                     # Script de démarrage automatique
 ├── Rd/                             # Documentation et guides
 │   ├── COMMANDS.md                 # Commands de test
 │   └── START.sh                    # Auto-start script
 │
-├── 🐱 chaton-ui/                   # Frontend React
+├──  chaton-ui/                   # Frontend React
 │   ├── src/
 │   │   ├── components/             # Composants React
 │   │   │   ├── ChatContainer.jsx   # Conteneur principal
@@ -128,7 +128,7 @@ ChatBot/
 │   ├── package.json
 │   └── vite.config.js
 │
-└── 🔌 chatbot/                     # Backend Node.js
+└──  chatbot/                     # Backend Node.js
     ├── server.js                   # Serveur Express
     ├── rag-pipeline.js             # Pipeline RAG complète
     ├── provider.js                 # Abstraction LLM
@@ -145,7 +145,7 @@ ChatBot/
 
 ---
 
-## 💻 Utilisation
+##  Utilisation
 
 ### 1. Interface du navigateur
 - Accéder à **http://localhost:5173**
@@ -193,7 +193,7 @@ curl -X POST http://localhost:3000/chat \
 
 ---
 
-## 📚 Comment fonctionne le RAG
+##  Comment fonctionne le RAG
 
 ### Phase 1: Préparation (une seule fois)
 1. **Chunking** - Documents découpés en morceaux (500 chars avec chevauchement)
@@ -210,15 +210,15 @@ curl -X POST http://localhost:3000/chat \
 
 ---
 
-## 🎨 Design UI/UX
+##  Design UI/UX
 
 ### Caractéristiques
-- 💬 **Interface intuitive** - Style ChatGPT
-- 🐱 **Design épuré** - Noir et blanc minimaliste
-- 📱 **Responsive** - Desktop, tablette, mobile
-- 💾 **Multi-conversations** - Créer/gérer plusieurs chats
-- ⌨️ **Raccourcis clavier** - Entrée pour envoyer, Maj+Entrée pour nouveau ligne
-- 🎨 **Animations** - Transitions fluides et indicateur de frappe
+-  **Interface intuitive** - Style ChatGPT
+-  **Design épuré** - Noir et blanc minimaliste
+-  **Responsive** - Desktop, tablette, mobile
+-  **Multi-conversations** - Créer/gérer plusieurs chats
+-  **Raccourcis clavier** - Entrée pour envoyer, Maj+Entrée pour nouveau ligne
+-  **Animations** - Transitions fluides et indicateur de frappe
 
 ### Palette de couleurs
 ```
@@ -231,7 +231,7 @@ Gris texte:     #8b8b99, #565869, #c5c5c5
 
 ---
 
-## 🛠️ Technologies
+##  Technologies
 
 | Composant | Tech |
 |-----------|------|
@@ -245,7 +245,7 @@ Gris texte:     #8b8b99, #565869, #c5c5c5
 
 ---
 
-## 📖 Documentation
+##  Documentation
 
 - **[chaton-ui/README.md](chaton-ui/README.md)** - Guide complet du frontend
 - **[chatbot/README.md](chatbot/README.md)** - Guide du backend
@@ -254,7 +254,7 @@ Gris texte:     #8b8b99, #565869, #c5c5c5
 
 ---
 
-## 🐛 Dépannage
+##  Dépannage
 
 ### "Load failed" dans l'interface
 ```bash
@@ -283,7 +283,7 @@ lsof -i :5173             # Frontend
 
 ---
 
-## 🚀 Optimisations futures
+##  Optimisations futures
 
 - [ ] Support multi-utilisateurs avec authentification
 - [ ] Historique persistant avec base de données
@@ -294,25 +294,25 @@ lsof -i :5173             # Frontend
 
 ---
 
-## 📝 Résumé du projet
+##  Résumé du projet
 
 **Chaton** combine une interface React moderne avec une architecture RAG sophistiquée. Le système recherche les documents pertinents dans Pinecone, puis utilise Mistral pour générer des réponses contextuelles avec citations. L'ensemble est modulaire, permettant de changer facilement le LLM, la plateforme vectorielle ou personnaliser l'UI. Parfait pour des chatbots d'entreprise basés sur des connaissances internes.
 
 ---
 
-## 📄 Licence
+##  Licence
 
 MIT License - Voir [LICENSE](LICENSE)
 
 ---
 
-## 👤 Auteur
+##  Auteur
 
 **NickBekolo** - [GitHub](https://github.com/NickBekolo)
 
 ---
 
-## 🤝 Contribution
+##  Contribution
 
 Les contributions sont bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
 
